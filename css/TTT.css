@@ -1,0 +1,46 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  position: absolute;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/bck.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;/*pas de scroll lateral*/
+  overflow-y: hidden;/*pas de scroll vertical*/
+}
+
+h2{
+  text-align-last: center;
+}
+
+.boxcenter{
+  position: absolute;
+  height: 60%;
+  width: 60%;
+  top: 20%;
+  left: 20%;
+  border: 1px solid red;
+  background-color: hsla(226, 32%, 49%, 0.69);/*bleu azure avec alpha*/
+}
+table{
+  height: 90%;
+  width: 60%;
+}
+td{
+  height: 10%;
+  width: 7%;
+  border: 1px solid black;
+}
+.player1{
+  background-color: green;
+}
+
+.player2{
+  background-color: blue;
+}
