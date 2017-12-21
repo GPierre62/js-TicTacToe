@@ -7,6 +7,7 @@ function joueur(block) {
   block.setAttribute("class", "play1");
     player=2;
     console.log ("joueur 1");
+
   }
 
   else if (player==2){
