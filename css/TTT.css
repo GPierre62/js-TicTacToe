@@ -22,6 +22,7 @@ h2{
   text-decoration-line: underline;
 }
 h3{
+  margin: 2%;
   text-align: center;
   text-decoration-line: underline;
 }
@@ -50,11 +51,10 @@ td{
   border: 1px solid black;
 }
 .classBase{
-  background-color:blue;
-  color:orange;
+  background-color:rgba(230, 245, 236, 0.59);
 }
 .play1{
-  background-color: red;
+  background-color: blue;
 }
 
 .play2{
@@ -63,7 +63,7 @@ td{
 .affichageJoueur{
   height: 90%;
   width: 35%;
-  background-color: lightgray;
+  background-color:rgba(230, 245, 236, 0.59);
   margin: 1%;
   margin-top: 5%;
 }
@@ -74,6 +74,7 @@ td{
   width: 49.5%;
   height: 50%;
   text-align: center;
+  background-color: blue;
 }
 .scoreJ2{
   float: right;
@@ -81,11 +82,32 @@ td{
   width: 49.5%;
   height: 50%;
   text-align: center;
+  background-color: green;
 }
 .tourJEtNbTours{
   margin-bottom: 0%;
+  text-align: center;
   width: 99%;
-  height: 25%;
-  border: 1px solid red;
+  height: 35%;
+  /*border: 1px solid red;*/
   float: inline-end;
+}
+#winJ1{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  display: none;
+  text-align: center;
+}
+#winJ2{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  display: none;
+  text-align: center;
+}
+#resetGame{
+  display: none;
 }

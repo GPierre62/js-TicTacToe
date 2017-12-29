@@ -9,17 +9,41 @@
   <body>
     <h2>Tic Tac Toe</h2>
     <div class="boxcenter" id="bobox">
-        <script>(grilleT())</script>
+      <div id=winJ1 onclick="disparition(this)">
+      Bravo joueur 1 vous avez remporter cette manche !</div>
+      <div id=winJ2 onclick="disparition(this)">
+      Bravo joueur 2 vous avez remporter cette manche !</div>
+        <!-- <script>(grilleT())</script> -->
+        <table>
+          <tr>
+            <td id="0" onclick="switchJoueur(this)" class="classBase"></td>
+            <td id="1" onclick="switchJoueur(this)" class="classBase"></td>
+            <td id="2" onclick="switchJoueur(this)" class="classBase"></td>
+          </tr>
+          <tr>
+            <td id="3" onclick="switchJoueur(this)" class="classBase"></td>
+            <td id="4" onclick="switchJoueur(this)" class="classBase"></td>
+            <td id="5" onclick="switchJoueur(this)" class="classBase"></td>
+          </tr>
+          <tr>
+            <td id="6" onclick="switchJoueur(this)" class="classBase"></td>
+            <td id="7" onclick="switchJoueur(this)" class="classBase"></td>
+            <td id="8" onclick="switchJoueur(this)" class="classBase"></td>
+          </tr>
+        </table>
         <div class="affichageJoueur">
             <h3>Score</h3>
             <div class="scoreJ1">
               <h4>Joueur 1</h4>
+              <p id="scoreJ1"></p>
             </div>
             <div class="scoreJ2">
               <h4>Joueur 2</h4>
             </div>
-            <div id"tourEtNbTour" class="tourJEtNbTours">
-
+            <div class="tourJEtNbTours">
+              <p id="tourNbTour"></p>
+              <!-- <input type="button" name="" value="Abandon" onclick="">
+              <input type="button" id="resetManche" name="" value="Redémarrer" onclick="ResetManche()"> -->
             </div>
         </div>
     </div>
@@ -30,14 +54,14 @@ x    Ajouter un titre avec le nom du jeu
 x    Créer un tableau avec 9 cellules
 x    Créer deux classes CSS “player1” et “player2” qui définissent l’aspect des cellules cliquées par le joueur 1 ou le joueur 2
   Et pour le Javascript :
-    Trouver une façon de mémoriser et d’afficher quel joueur doit jouer (alternance player1/player2)
+x    Trouver une façon de mémoriser et d’afficher quel joueur doit jouer (alternance player1/player2)
 x    Lorsque l’on clique sur une cellule, celle-ci change de couleur (en utilisant les classes player1/player2)
 x    Le joueur suivant ne peut pas cliquer sur la cellule du joueur précédent
-    A chaque clic sur une cellule, tester si un joueur a gagné (gérer toutes les combinaisons de victoire)
-    Afficher une div ‘Player1 gagné!’ ou ‘Player2 gagné!’ quand un joueur a gagné. Cette div disparaît quand on clique dessus.
+x    A chaque clic sur une cellule, tester si un joueur a gagné (gérer toutes les combinaisons de victoire)
+x    Afficher une div ‘Player1 gagné!’ ou ‘Player2 gagné!’ quand un joueur a gagné. Cette div disparaît quand on clique dessus.
     Utiliser des console.logs pour :
     Afficher le numéro de cellule + quel joueur a cliqué quand une cellule est active
-    Le nombre de tour
+x    Le nombre de tour
   Optionnel (mais obligatoire pour ceux qui sont en avance :D) ​:
     Changer le “thème” de votre jeux selon le vainqueur.
     Créer un tableau des scores
