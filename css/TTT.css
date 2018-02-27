@@ -54,11 +54,17 @@ td{
   background-color:rgba(230, 245, 236, 0.59);
 }
 .play1{
-  background-color: blue;
+  background-image: url(../img/croix.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .play2{
-  background-color: green;
+  background-image: url(../img/cercle.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .affichageJoueur{
   height: 90%;
@@ -91,6 +97,9 @@ td{
   height: 35%;
   /*border: 1px solid red;*/
   float: inline-end;
+}
+#tourNbTour{
+  margin-top: 1%;
 }
 #winJ1{
   position: absolute;
